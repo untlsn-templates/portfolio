@@ -4,7 +4,16 @@ import { presetAio } from 'untlsn-unocss';
 
 export default u.defineConfig({
 	theme: {
-		colors: {},
+		colors: {
+			bg: {
+				1: '#000000',
+				2: '#121212',
+			},
+			wave: {
+				pink:   '#C61E75',
+				yellow: '#FFD488',
+			},
+		},
 	},
 	presets: [
 		u.presetUno(),
@@ -18,5 +27,5 @@ export default u.defineConfig({
 		u.transformerDirectives(),
 		u.transformerCompileClass(),
 		u.transformerVariantGroup(),
-	]
-})
+	],
+});
