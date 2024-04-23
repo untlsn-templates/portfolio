@@ -6,8 +6,7 @@ export default u.defineConfig({
 	theme: {
 		colors: {
 			bg: {
-				1: '#000000',
-				2: '#121212',
+				1: '#1A1A1E',
 			},
 			wave: {
 				pink:   '#C61E75',
@@ -20,7 +19,11 @@ export default u.defineConfig({
 		u.presetWind(),
 		u.presetIcons(),
 		u.presetTypography(),
-		u.presetWebFonts(),
+		u.presetWebFonts({
+			fonts: {
+				sans: 'Lato',
+			},
+		}),
 		presetAio(),
 	],
 	transformers: [

@@ -1,0 +1,8 @@
+.hue-rotate-animation {
+	animation: hue-cycle 30s linear infinite;
+}
+
+@keyframes hue-cycle {
+	from { filter: hue-rotate(0deg); }
+	to { filter: hue-rotate(360deg); }
+}
