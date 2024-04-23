@@ -18,17 +18,19 @@ export default function TheHeader() {
 				onTop() && 'scale-200',
 			)}
 			>
-				<img
-					srcset="/images/logo.webp, /images/logo.png"
-					src="/images/logo.webp"
-					alt="logo"
-					class="size-12 inline-block"
-				/>
 				<a
 					href="/#home"
 					class="leading-12"
 				>
-					Untlsn Portfolio
+					<img
+						srcset="/images/logo.webp, /images/logo.png"
+						src="/images/logo.webp"
+						alt="logo"
+						class="size-12 inline-block"
+					/>
+					<span class="max-lg:hidden">
+						Untlsn Portfolio
+					</span>
 				</a>
 			</p>
 			<ul class={clsx(
