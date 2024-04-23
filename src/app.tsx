@@ -3,6 +3,7 @@ import 'untcss-reset';
 import 'uno.css';
 import TheHeader from '~/components/TheHeader';
 import SvgHex from '~/components/SvgHex';
+import '~/assets/style/hue-rotate-animation.css';
 
 export default function App() {
 	return (
@@ -16,7 +17,7 @@ export default function App() {
 							I'm Filip, a frontend developer with great passion to new technologies and approaches
 						</h1>
 					</div>
-					<div class="relative">
+					<div class="relative hue-rotate-animation">
 						<SvgHex class="size-150 absolute left-0 top-0" />
 						<SvgHex class="size-150 blur-125" />
 					</div>

@@ -1,12 +1,7 @@
-import '~/assets/style/hue-rotate-animation.css';
-import clsx from 'clsx';
-
 export default function SvgHex(props: { class?: string }) {
-
-
 	return (
 		<svg
-			class={clsx(props.class, 'hue-rotate-animation')}
+			class={props.class}
 			width="768"
 			height="841"
 			viewBox="0 0 768 841"
