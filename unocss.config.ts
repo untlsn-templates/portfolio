@@ -5,6 +5,7 @@ function handleUnits(unit: string) {
 	const unitAsNumber = Number(unit);
 	if (!isNaN(unitAsNumber))
 		return `${unitAsNumber / 4}rem`;
+	if (unit == 'full') return '100%';
 	if (unit.includes('/'))
 		return `calc(${unit} * 100%)`;
 	if (unit.startsWith('--'))
